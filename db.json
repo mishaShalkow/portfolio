@@ -1,0 +1,17 @@
+{
+  "information": [
+    {
+      "aboutMe": "Мне 26лет, окончил БГАС(Витебский филиал Белорусской государственной академии связи) по специализации 'программное обеспечение'. Имею опыт работы с фреймворком angular. Быстро учусь и отвественно подхожу к реализации проектов.",
+      "hello": " Привет, меня зовут Михаил, я начинающий frontend developer",
+      "imgView": "https://getsolution.com/wp-content/uploads/2020/11/Data-Breach-Incident-Response.jpg",
+      "imgGit": "https://blogpost.ru/wp-content/uploads/2018/02/git-150x150.png",
+      "imgJS": "https://usefulangle.com/img/thumb/javascript.png",
+      "imgAngular": "https://images.ctfassets.net/zojzzdop0fzx/2niEOIroLnnZ5RaQn8CkO0/722eb41774188cdfb1060c525474073c/Angular_full_color_logo.svg__1_.png?w=500&h=500&q=50&fm=png",
+      "imgHTML": "https://www.nextwebi.com/assets/img/skills/html-5.webp",
+      "imgCSS": "https://gas-kvas.com/uploads/posts/2023-02/1675463198_gas-kvas-com-p-fonovii-risunok-v-css3-3.png",
+      "imgFigma": "https://i7.uihere.com/icons/697/321/156/figma-radio-set-signal-square-squares-icon-f33f4804610c8d6317dd88e00d5ef057.png",
+      "imgSass": "http://cfile28.uf.tistory.com/image/214FBA41575FF05E12F887",
+      "expTxt": "Прошел курс по Frontend разработке от SkillFactory. Есть небольшие SPA проекты с использованием фреймворка angular. Верстал лендинги по макету с Figma."
+    }
+  ]
+}

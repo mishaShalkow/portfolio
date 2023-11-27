@@ -1,0 +1,99 @@
+@import url("https://fonts.googleapis.com/css2?family=PT+Sans&family=Sometype+Mono:ital@0;1&family=Ubuntu:wght@300;500&display=swap");
+
+$font-family: "Ubuntu";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  font-family: $font-family;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+.headerContainer_nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 20px;
+  background-color: rgb(0, 0, 0);
+  color: rgb(196, 195, 195);
+}
+
+.nav_item {
+  font-family: "PT Sans", sans-serif;
+}
+
+.headerContainer_nav-item a {
+  color: rgb(196, 195, 195);
+}
+
+.headerContainer_nav-logo {
+  gap: 1em;
+  font-size: 18px;
+}
+
+.nav-item_menu {
+  display: flex;
+  gap: 1em;
+  font-size: 18px;
+}
+
+.nav-item_menu a:hover {
+  color: #ffffff;
+  border-radius: 5px;
+  transition: 0.3s ease;
+}
+
+.nav-item_menu li {
+  padding: 5px 14px;
+}
+
+input[type="checkbox"] {
+  display: none;
+}
+
+.nav-item_checkbox {
+  display: none;
+  font-size: 24px;
+  user-select: none;
+}
+
+@media (max-width: 768px) {
+  .nav-item_menu {
+    display: none;
+    position: absolute;
+    background-color: teal;
+    right: 0;
+    left: 0;
+    text-align: center;
+    padding: 16px 0;
+  }
+
+  .nav-item_menu li:hover {
+    display: inline-block;
+    background-color: #4c9e9e;
+    transition: 0.3s ease;
+  }
+
+  .nav-item_menu li + li {
+    margin-top: 12px;
+  }
+
+  input[type="checkbox"]:checked ~ .nav-item_menu {
+    display: block;
+  }
+
+  .nav-item_checkbox {
+    display: block;
+  }
+}

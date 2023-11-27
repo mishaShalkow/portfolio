@@ -1,0 +1,153 @@
+<main class="wrapper" *ngFor="let item of itemFromDb">
+  <section class="main">
+    <h3 class="main__title">
+      Привет, меня зовут Михаил, <span>я начинающий Frontend developer</span>
+    </h3>
+    <div class="areaImg">
+      <img class="main__img" [src]="item.imgView" alt="" />
+    </div>
+    <span class="main__aboutMe"> {{ item.aboutMe }}</span>
+  </section>
+  <section id="aboutMe" class="charsSkillsSection">
+    <div class="charsSkills">
+      <img
+        class="charsSkills__img"
+        src="https://i.ytimg.com/vi/iPtFHLjiYIY/hqdefault.jpg"
+        alt=""
+      />
+      <span>Отвественный</span>
+    </div>
+    <div class="charsSkills">
+      <img
+        class="charsSkills__img"
+        src="https://i.ytimg.com/vi/iPtFHLjiYIY/hqdefault.jpg"
+        alt=""
+      />
+      <span>Знание английского</span>
+    </div>
+    <div class="charsSkills">
+      <img
+        class="charsSkills__img"
+        src="https://i.ytimg.com/vi/iPtFHLjiYIY/hqdefault.jpg"
+        alt=""
+      />
+      <span>Быстро учусь</span>
+    </div>
+    <div class="charsSkills">
+      <img
+        class="charsSkills__img"
+        src="https://i.ytimg.com/vi/iPtFHLjiYIY/hqdefault.jpg"
+        alt=""
+      />
+      <span>Опыт в разработке</span>
+    </div>
+  </section>
+  <section id="skills" class="skillsSection">
+    <span class="skillsSection__title">Опыт</span>
+    <p class="skillsSection__text">{{ item.expTxt }}</p>
+    <div class="skillsSection__skils">
+      <div class="skils__items">
+        <img
+          class="skils__item"
+          [src]="item.imgGit"
+          alt="изображение иконки GitHub"
+        />
+      </div>
+      <div class="skils__items">
+        <img
+          class="skils__item"
+          [src]="item.imgJS"
+          alt="изображение иконки JS"
+        />
+      </div>
+      <div class="skils__items">
+        <img
+          class="skils__item"
+          [src]="item.imgAngular"
+          alt="изображение иконки Angular"
+        />
+      </div>
+      <div class="skils__items">
+        <img
+          class="skils__item"
+          [src]="item.imgHTML"
+          alt="изображение иконки HTML"
+        />
+      </div>
+      <div class="skils__items">
+        <img
+          class="skils__item"
+          [src]="item.imgCSS"
+          alt="изображение иконки CSS"
+        />
+      </div>
+      <div class="skils__items">
+        <img
+          class="skils__item"
+          [src]="item.imgFigma"
+          alt="изображение иконки Figma"
+        />
+      </div>
+      <div class="skils__items">
+        <img
+          class="skils__item"
+          [src]="item.imgSass"
+          alt="изображение иконки SASS"
+        />
+      </div>
+    </div>
+  </section>
+  <section id="contact" class="contactSection">
+    <span class="contactSection__title">Контакты</span>
+    <div class="contactSection_style">
+      <div class="contactSection__contacts">
+        <a
+          class="contactSection__contacts-item"
+          href="https://github.com/mishaShalkow"
+          target="_blank"
+          >GitHub</a
+        >
+        <a
+          class="contactSection__contacts-item"
+          href="https://t.me/mShalkow"
+          target="_blank"
+          >telegram
+        </a>
+        <a
+          class="contactSection__contacts-item"
+          href="https://wa.me/+79772557991"
+          target="_blank"
+        >
+          WhatsApp</a
+        >
+      </div>
+      <span class="contactSection_PhoneNumber">+79772557991</span>
+      <div class="contactSection__contacts">
+        <a
+          class="contactSection__contacts-item"
+          href="https://vk.com/id75182400"
+          target="_blank"
+          >BK
+        </a>
+        <a
+          class="contactSection__contacts-item"
+          title="misha.shalkow@gmail.com"
+          href="https://mail.google.com/mail/u/0/#inbox"
+          target="_blank"
+          >Gmail</a
+        >
+        <a
+          class="contactSection__contacts-item"
+          href="https://hh.ru/resume/e57d053eff0bf2c1e70039ed1f6549776e3330?from=share_ios"
+          target="_blank"
+        >
+          HH</a
+        >
+      </div>
+    </div>
+  </section>
+</main>
+<footer class="footer">
+  <div class="footer__copy">2023</div>
+  <div class="footer__text">M-SH_Production</div>
+</footer>

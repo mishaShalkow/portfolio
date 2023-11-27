@@ -1,0 +1,20 @@
+<header class="headerContainer">
+  <nav class="headerContainer_nav">
+    <div class="headerContainer_nav-logo">MSH | Михаил Шалков</div>
+    <ul class="headerContainer_nav-item">
+      <input type="checkbox" id="checkbox_toggle" />
+      <label for="checkbox_toggle" class="nav-item_checkbox">&#9776;</label>
+      <div class="nav-item_menu">
+        <li class="nav_item">
+          <a [routerLink]="['/']" fragment="aboutMe">Обо мне</a>
+        </li>
+        <li class="nav_item">
+          <a [routerLink]="['/']" fragment="skills">Навыки</a>
+        </li>
+        <li class="nav_item">
+          <a [routerLink]="['/']" fragment="contact">Контакты</a>
+        </li>
+      </div>
+    </ul>
+  </nav>
+</header>
