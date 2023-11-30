@@ -1,143 +1,3 @@
-/* @font-face {
-  font-family: "Lexend Exa";
-  src: url("/src/fonts/LexendExa-ExtraLight.ttf");
-}
-
-main {
-  font-family: "Lexend Exa";
-}
-
-.mainContainer {
-  background-color: rgb(22, 22, 22);
-  height: 1200px;
-}
-
-.mainContainer_section-list1 {
-  position: relative;
-  scroll-behavior: smooth;
-  color-scheme: dark;
-  margin: 0px auto;
-  padding: 0px 15px;
-  @media (max-width: 1200px) {
-    .mainContainer_section-list1 {
-      max-width: 970px;
-    }
-    .imgConfig {
-      top: 100px;
-      margin-left: 30px;
-      border-radius: 15%;
-    }
-    .sectionlist1__aboutMe {
-      position: relative;
-      top: 410px;
-      right: 780px;
-    }
-    .mainContainer {
-      background-color: rgb(22, 22, 22);
-      height: 876px;
-    }
-    .aboutMe__config__text {
-      width: 876px;
-      margin-top: 0;
-    }
-  }
-  @media (max-width: 992px) {
-    .mainContainer_section-list1 {
-      max-width: 750px;
-    }
-  }
-
-  @media (max-width: 767px) {
-    .mainContainer_section-list1 {
-      max-width: none;
-    }
-  }
-} */
-
-/* .section-list1__hello {
-  display: flex;
-}
-
-.section-list1__text {
-  font-size: 30px;
-  font-family: "Lexend Exa";
-  color: rgb(196, 195, 195);
-  margin: 30px auto;
-} */
-
-/* .imgConfig {
-  position: absolute;
-  height: 500px;
-  top: 220px;
-  left: 170px;
-  border-radius: 15%;
-}
- */
-/* .imgConfig {
-  display: flex;
-  justify-content: flex-start;
-  height: 500px;
-  border-radius: 15%;
-}
-
-.aboutMe__config {
-  margin-left: 950px;
-  color: rgb(196, 195, 195);
-  margin-top: 130px;
-  font-size: 25px;
-  margin-right: 25px;
-}
-
-.aboutMe__config__text {
-  margin-top: 40px;
-}
-
-.mainContainer_section-list2 {
-  background-color: rgb(22, 22, 22);
-  margin: 0;
-}
- */
-
-/* .section-list1__text {
-  font-size: 30px;
-  font-family: "Lexend Exa";
-  color: rgb(196, 195, 195);
-}
-
-.mainContainer {
-  background-color: rgb(22, 22, 22);
-  height: 1200px;
-}
-
-.aboutMe__config {
-  color: rgb(196, 195, 195);
-}
-
-.grid-wrapper {
-  display: grid;
-  grid-template-columns: 150px 1fr;
-  grid-template-rows: 1fr 100px;
-  grid-template-areas:
-    "title" "title"
-    "img" "about";
-}
-
-.grid-title {
-  grid-area: title;
-  margin: 0;
-}
-
-.grid-img {
-  grid-area: img;
-  height: 500px;
-  border-radius: 15%;
-}
-
-.grid-about {
-  grid-area: about;
-}
- */
-
 @import url("https://fonts.googleapis.com/css2?family=Gajraj+One&family=Lexend+Exa:wght@300&family=PT+Sans&family=Sometype+Mono:ital@0;1&family=Ubuntu:wght@300;500&display=swap");
 
 @font-face {
@@ -250,6 +110,10 @@ main {
 
 .skils__item {
   height: 50px;
+  cursor: pointer;
+  &:hover {
+    transform: scale(1.5);
+  }
 }
 
 .skils__items {
@@ -279,11 +143,11 @@ main {
     font-size: 30px;
     margin-top: 180px;
     cursor: pointer;
-  }
-  span:hover {
-    color: #ffffff;
-    border-radius: 5px;
-    transition: 0.3s ease;
+    &:hover {
+      color: #ffffff;
+      border-radius: 5px;
+      transition: 0.3s ease;
+    }
   }
 }
 
@@ -299,11 +163,11 @@ main {
     text-decoration: none;
     font-size: 30px;
     color: rgb(167, 167, 167);
-  }
-  a:hover {
-    color: #ffffff;
-    border-radius: 5px;
-    transition: 0.3s ease;
+    &:hover {
+      color: #ffffff;
+      border-radius: 5px;
+      transition: 0.3s ease;
+    }
   }
 }
 
@@ -315,4 +179,48 @@ main {
   align-items: center;
   display: grid;
   grid-template: 1fr / 1fr minmax(auto, 300px) minmax(auto, 1100px) 1fr;
+}
+
+@media (min-width: 1440px) and (max-width: 1450px) {
+  .wrapper {
+    display: block;
+  }
+  .main__img {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 350px;
+    border-radius: 15%;
+  }
+  .main__aboutMe {
+    color: rgb(167, 167, 167);
+    grid-area: main__aboutMe;
+    font-size: 30px;
+    position: relative;
+    top: 500px;
+    right: 330px;
+    line-height: 1.5;
+  }
+  .charsSkillsSection {
+    margin-top: 260px;
+  }
+  .charsSkills {
+    display: grid;
+    border: 2px inset blue;
+    border-radius: 15px;
+    padding: 30px;
+    width: 250px;
+  }
+}
+
+@media (min-width: 1024px) and (max-width: 1034px) {
+  .wrapper {
+    display: block;
+  }
+  .charsSkillsSection {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
 }
