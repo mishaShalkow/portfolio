@@ -1,12 +1,18 @@
-@font-face {
+/* @font-face {
   $font-family: "Cinzel";
   src: url("https://fonts.googleapis.com/css2?family=Gajraj+One&family=Lexend+Exa:wght@300&family=PT+Sans&family=Sometype+Mono:ital@0;1&family=Ubuntu:wght@300;500&display=swap");
+}
+ */
+$font-family: "Ubuntu";
+
+main {
+  font-family: $font-family;
 }
 
 .wrapper {
   display: grid;
   grid-template: minmax(100px, auto) 1fr minmax(70px, 1fr) / 1fr;
-  font-family: "Cinzel";
+  /* font-family: "Cinzel"; */
 }
 
 .main {
@@ -19,10 +25,10 @@
 .main__title {
   grid-area: main__title;
   color: rgb(196, 195, 195);
-  font-size: 30px;
+  font-size: 28px;
   justify-items: center;
   span {
-    font-size: 40px;
+    font-size: 35px;
     color: rgb(31, 3, 107);
   }
 }
@@ -35,7 +41,7 @@
   color: rgb(167, 167, 167);
   grid-area: main__aboutMe;
   margin-left: 15px;
-  font-size: 30px;
+  font-size: 28px;
   line-height: 1.5;
 }
 
@@ -71,7 +77,7 @@
     margin: 0 auto;
   }
   span {
-    font-size: 30px;
+    font-size: 25px;
     line-height: 1.5;
     display: block;
     text-align: center;
