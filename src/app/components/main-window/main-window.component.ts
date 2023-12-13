@@ -13,6 +13,10 @@ export class MainWindowComponent implements OnInit {
   itemFromDb: db[];
   fragment: string;
   itemFromDbSubcribe: Subscription;
+  aboutMe: string =
+    "Мне 26лет, окончил БГАС(Витебский филиал Белорусской государственной академии связи) по специализации 'программное обеспечение'. Имею опыт работы с фреймворком angular. Быстро учусь и отвественно подхожу к реализации проектов.";
+  expTxt: string =
+    'Прошел курс по Frontend разработке от SkillFactory. Есть небольшие SPA проекты с использованием фреймворка angular. Верстал лендинги по макету с Figma.';
   constructor(
     private service: DbServiceService,
     private route: ActivatedRoute

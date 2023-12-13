@@ -1,12 +1,16 @@
-<main class="wrapper" *ngFor="let item of itemFromDb">
+<main class="wrapper">
   <section class="main">
     <h3 class="main__title">
       Привет, меня зовут Михаил, <span>я начинающий Frontend developer</span>
     </h3>
     <div class="areaImg">
-      <img class="main__img" [src]="item.imgView" alt="" />
+      <img
+        class="main__img"
+        src="https://getsolution.com/wp-content/uploads/2020/11/Data-Breach-Incident-Response.jpg"
+        alt=""
+      />
     </div>
-    <span class="main__aboutMe"> {{ item.aboutMe }}</span>
+    <span class="main__aboutMe"> {{ aboutMe }}</span>
   </section>
   <section id="aboutMe" class="charsSkillsSection">
     <div class="charsSkills">
@@ -44,54 +48,54 @@
   </section>
   <section id="skills" class="skillsSection">
     <span class="skillsSection__title">Опыт</span>
-    <p class="skillsSection__text">{{ item.expTxt }}</p>
+    <p class="skillsSection__text">{{ expTxt }}</p>
     <div class="skillsSection__skils">
       <div class="skils__items">
         <img
           class="skils__item"
-          [src]="item.imgGit"
+          src="https://blogpost.ru/wp-content/uploads/2018/02/git-150x150.png"
           alt="изображение иконки GitHub"
         />
       </div>
       <div class="skils__items">
         <img
           class="skils__item"
-          [src]="item.imgJS"
+          src="https://usefulangle.com/img/thumb/javascript.png"
           alt="изображение иконки JS"
         />
       </div>
       <div class="skils__items">
         <img
           class="skils__item"
-          [src]="item.imgAngular"
+          src="https://images.ctfassets.net/zojzzdop0fzx/2niEOIroLnnZ5RaQn8CkO0/722eb41774188cdfb1060c525474073c/Angular_full_color_logo.svg__1_.png?w=500&h=500&q=50&fm=png"
           alt="изображение иконки Angular"
         />
       </div>
       <div class="skils__items">
         <img
           class="skils__item"
-          [src]="item.imgHTML"
+          src="https://www.nextwebi.com/assets/img/skills/html-5.webp"
           alt="изображение иконки HTML"
         />
       </div>
       <div class="skils__items">
         <img
           class="skils__item"
-          [src]="item.imgCSS"
+          src="https://gas-kvas.com/uploads/posts/2023-02/1675463198_gas-kvas-com-p-fonovii-risunok-v-css3-3.png"
           alt="изображение иконки CSS"
         />
       </div>
       <div class="skils__items">
         <img
           class="skils__item"
-          [src]="item.imgFigma"
+          src="https://i7.uihere.com/icons/697/321/156/figma-radio-set-signal-square-squares-icon-f33f4804610c8d6317dd88e00d5ef057.png"
           alt="изображение иконки Figma"
         />
       </div>
       <div class="skils__items">
         <img
           class="skils__item"
-          [src]="item.imgSass"
+          src="https://cdn2.iconfinder.com/data/icons/designer-skills/128/sass-1024.png"
           alt="изображение иконки SCSS"
         />
       </div>
